@@ -1,0 +1,98 @@
+{
+    "XXE": {
+        "SAXReader": "SAXReader&\\.read\\(",
+        "SAXBuilder": "SAXBuilder&\\.build\\(",
+        "SAXParser": "newSAXParser&\\.parse\\(",
+        "XMLReader": "XMLReader&\\.parse\\(",
+        "DocumentBuilder": "DocumentBuilder&\\.parse\\(",
+        "XMLStreamReader": "createXMLStreamReader\\(",
+        "Unmarshaller":"Unmarshaller&\\.unmarshal\\("
+    },
+    "JNDI":{
+        "Context":"Context&\\.lookup\\("
+    },
+    "ObjectDeserialization": {
+        "readObject": "\\.readObject\\(",
+        "ObjectInputStream":"ObjectInputStream&\\.readObject\\(",
+        "XMLDecoder":"XMLDecoder&\\.readObject\\(",
+        "fromXML": "fromXML\\(",
+        "readUnshared": "readUnshared\\(",
+        "Snakeyaml": "Yaml&\\.load\\("
+    },
+    "ComponentsVul":{
+        "FastJson":"JSON&\\.parse\\(|parseObject\\(",
+        "FastJson-2":"JSONObject&\\.parse\\(|parseObject\\(",
+        "Jackson":"ObjectMapper&\\.readValue\\(",
+        "Log4j":"Logger&\\.[info|error]\\(",
+        "Shiro":"CookieRememberMeManager&\\.getCipherKey\\(",
+        "XStream":"XStream&\\.fromXML\\("
+    },
+    "SSRF": {
+        "Request":"Request&\\.execute\\(",
+        "URL": "URL&\\.openConnection\\(",
+        "URLConnection":"URLConnection&\\.getInputStream\\(",
+        "ImageIO": "ImageIO\\.read\\(",
+        "HttpClient": "HttpClient&\\.execute",
+        "Socket": "new\\sSocket\\(",
+        "OkHttpClient": "OkHttpClient&\\.newCall\\(",
+        "SimpleDriverDataSource": "\\.getConnection\\(",
+        "DriverManager": "\\.getConnection\\("
+    },
+    "FileUpload": {
+        "Files":"Files&\\.write\\(",
+        "FileItem":"FileItem&\\.write\\(",
+        "Part":"Part&\\.write\\(",
+        "BufferedOutputStream":"BufferedOutputStream&\\.write\\(",
+        "BufferedWriter":"BufferedWriter&\\.write\\(",
+        "FileOutputStream":"FileOutputStream&\\.write\\(",
+        "MultipartFile": "MultipartFile&\\.transferto\\(",
+        "FileWriter":"FileWriter&\\.write\\("
+    },
+    "File Read/Download":{
+        "InputStream":"InputStream&\\.read\\(",
+        "FileReader":"FileReader&\\.read\\(",
+        "BufferedReader":"BufferedReader&\\.read",
+        "IOUtils":"IOUtils&\\.write\\("
+    },
+    "File Delete":{
+        "File":"File&\\.delete\\("
+    },
+    "Directory Traversal":{
+        "OutputStream":"OutputStream&\\.write\\("
+    },
+    "File": {
+        "createNewFile": "\\.createNewFile\\(|FileOutputStream\\(",
+        "FileInputStream": "new\\sFileInputStream\\("
+    },
+    "Autobinding": {
+        "SessionAttributes": "@SessionAttributes",
+        "ModelAttribute": "@ModelAttribute"
+    },
+    "URL-Redirect": {
+        "sendRedirect": "sendRedirect\\(",
+        "setHeader": "setHeader\\(\\\"refresh",
+        "forward": "forward\\("
+    },
+    "RCE": {
+        "Runtime": "Runtime&\\.exec\\(",
+        "ProcessBuilder": "ProcessBuilder&\\.start\\(",
+        "ProcessImpl":"ProcessImpl&start",
+        "ScriptEngine":"ScriptEngine&\\.eval\\(",
+        "GroovyShell": "GroovyShell&\\.evaluate\\("
+    },
+    "SPelInjection": {
+        "ExpressionParser": "ExpressionParser&\\.getValue\\("
+    },
+    "SSTI":{
+        "Velocity":"Velocity&\\.evaluate\\(",
+        "FreeMarker":"Template&\\.[getTemplate|process]\\("
+    },
+    "SQL Injection": {
+        "JDBC-Statement":"Statement&\\.executeQuery\\(",
+        "JDBC-PreparedStatement":"PreparedStatement&\\.executeQuery\\(",
+        "Mybatis": "mybatis\\.org&\\$\\{.*?\\}"
+    },
+    "Info-disclosure": {
+        "actuator": "spring-boot-starter-actuator"
+    }
+}
