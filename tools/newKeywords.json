@@ -1,0 +1,298 @@
+{
+    "XXE": [
+        {
+            "Alias": "SAXReader",
+            "Class": "SAXReader",
+            "Method": "read"
+        },
+        {
+            "Alias": "SAXBuilder",
+            "Class": "SAXBuilder",
+            "Method": "build"
+        },
+        {
+            "Alias": "SAXParser",
+            "Class": "SAXParser",
+            "Method": "parse"
+        },
+        {
+            "Alias": "XMLReader",
+            "Class": "XMLReader",
+            "Method": "parse"
+        },
+        {
+            "Alias": "DocumentBuilder",
+            "Class": "DocumentBuilder",
+            "Method": "parse"
+        },
+        {
+            "Alias": "Unmarshaller",
+            "Class": "Unmarshaller",
+            "Method": "unmarshal"
+        }
+    ],
+    "JNDI": [
+        {
+            "Alias": "Context",
+            "Class": "Context",
+            "Method": "lookup"
+        }
+    ],
+    "ObjectDeserialization": [
+        {
+            "Alias": "ObjectInputStream",
+            "Class": "ObjectInputStream",
+            "Method": "readObject"
+        },
+        {
+            "Alias": "XMLDecoder",
+            "Class": "XMLDecoder",
+            "Method": "readObject"
+        },
+        {
+            "Alias": "readUnshared",
+            "Class": "ObjectInputStream",
+            "Method": "readUnshared"
+        },
+        {
+            "Alias": "Snakeyaml",
+            "Class": "Yaml",
+            "Method": "load"
+        }
+    ],
+    "ComponentsVul": [
+        {
+            "Alias": "FastJson",
+            "Class": "JSON",
+            "Method": "parseObject"
+        },
+        {
+            "Alias": "FastJson-2",
+            "Class": "JSONObject",
+            "Method": "parseObject"
+        },
+        {
+            "Alias": "Jackson",
+            "Class": "ObjectMapper",
+            "Method": "readValue"
+        },
+        {
+            "Alias": "Log4j",
+            "Class": "Logger",
+            "Method": "info"
+        },
+        {
+            "Alias": "Log4j",
+            "Class": "Logger",
+            "Method": "error"
+        },
+        {
+            "Alias": "Shiro",
+            "Class": "CookieRememberMeManager",
+            "Method": "getCipherKey"
+        },
+        {
+            "Alias": "XStream",
+            "Class": "XStream",
+            "Method": "fromXML"
+        }
+    ],
+    "SSRF": [
+        {
+            "Alias": "Request",
+            "Class": "Request",
+            "Method": "execute"
+        },
+        {
+            "Alias": "URL",
+            "Class": "URL",
+            "Method": "openConnection"
+        },
+        {
+            "Alias": "URLConnection",
+            "Class": "URLConnection",
+            "Method": "getInputStream"
+        },
+        {
+            "Alias": "ImageIO",
+            "Class": "ImageIO",
+            "Method": "read"
+        },
+        {
+            "Alias": "HttpClient",
+            "Class": "HttpClient",
+            "Method": "execute"
+        },
+        {
+            "Alias": "OkHttpClient",
+            "Class": "OkHttpClient",
+            "Method": "newCall"
+        },
+        {
+            "Alias": "SimpleDriverDataSource",
+            "Class": "SimpleDriverDataSource",
+            "Method": "getConnection"
+        }
+    ],
+    "File Upload": [
+        {
+            "Alias": "Files",
+            "Class": "Files",
+            "Method": "write"
+        },
+        {
+            "Alias": "FileItem",
+            "Class": "FileItem",
+            "Method": "write"
+        },
+        {
+            "Alias": "Part",
+            "Class": "Part",
+            "Method": "write"
+        },
+        {
+            "Alias": "BufferedOutputStream",
+            "Class": "BufferedOutputStream",
+            "Method": "write"
+        },
+        {
+            "Alias": "BufferedWriter",
+            "Class": "BufferedWriter",
+            "Method": "write"
+        },
+        {
+            "Alias": "FileOutputStream",
+            "Class": "FileOutputStream",
+            "Method": "write"
+        },
+        {
+            "Alias": "MultipartFile",
+            "Class": "MultipartFile",
+            "Method": "transferto"
+        },
+        {
+            "Alias": "FileWriter",
+            "Class": "FileWriter",
+            "Method": "write"
+        }
+    ],
+    "File Read/Download": [
+        {
+            "Alias": "InputStream",
+            "Class": "InputStream",
+            "Method": "read"
+        },
+        {
+            "Alias": "FileReader",
+            "Class": "FileReader",
+            "Method": "read"
+        },
+        {
+            "Alias": "BufferedReader",
+            "Class": "BufferedReader",
+            "Method": "read"
+        },
+        {
+            "Alias": "IOUtils",
+            "Class": "IOUtils",
+            "Method": "write"
+        },
+        {
+            "Alias": "IOUtils",
+            "Class": "IOUtils",
+            "Method": "copy"
+        }
+    ],
+    "File Delete": [
+        {
+            "Alias": "File",
+            "Class": "File",
+            "Method": "delete"
+        }
+    ],
+    "Directory Traversal": [
+        {
+            "Alias": "OutputStream",
+            "Class": "OutputStream",
+            "Method": "write"
+        },
+        {
+            "Alias": "ListFiles",
+            "Class": "File",
+            "Method": "listFiles"
+        },
+        {
+            "Alias": "Path",
+            "Class": "Paths",
+            "Method": "get"
+        }
+    ],
+    "RCE": [
+        {
+            "Alias": "Runtime",
+            "Class": "Runtime",
+            "Method": "exec"
+        },
+        {
+            "Alias": "ProcessBuilder",
+            "Class": "ProcessBuilder",
+            "Method": "start"
+        },
+        {
+            "Alias": "ProcessImpl",
+            "Class": "ProcessImpl",
+            "Method": "start"
+        },
+        {
+            "Alias": "ScriptEngine",
+            "Class": "ScriptEngine",
+            "Method": "eval"
+        },
+        {
+            "Alias": "GroovyShell",
+            "Class": "GroovyShell",
+            "Method": "evaluate"
+        }
+    ],
+    "SPelInjection": [
+        {
+            "Alias": "ExpressionParser",
+            "Class": "ExpressionParser",
+            "Method": "getValue"
+        }
+    ],
+    "SSTI": [
+        {
+            "Alias": "Velocity",
+            "Class": "Velocity",
+            "Method": "evaluate"
+        },
+        {
+            "Alias": "FreeMarker",
+            "Class": "Template",
+            "Method": "getTemplate"
+        },
+        {
+            "Alias": "FreeMarker",
+            "Class": "Template",
+            "Method": "process"
+        }
+    ],
+    "SQL Injection": [
+        {
+            "Alias": "JDBC-Statement",
+            "Class": "Statement",
+            "Method": "executeQuery"
+        },
+        {
+            "Alias": "JDBC-PreparedStatement",
+            "Class": "PreparedStatement",
+            "Method": "executeQuery"
+        },
+        {
+            "Alias": "Mybatis",
+            "Class": "mybatis\\.org",
+            "Method": "\\$\\{.*?\\}"
+        }
+    ]
+}
